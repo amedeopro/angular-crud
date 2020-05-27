@@ -26,14 +26,14 @@ export class CatalogComponent{
   active: Device;
 
   constructor(private http: HttpClient) {
-    this.getAll()
+    this.getAll();
   }
 
   getAll(){
     this.http.get<Device[]>(`http://localhost:3000/devices`)
       .subscribe(res => {
         this.devices = res;
-      })
+      });
   }
 
   deleteHandler(device: Device){
@@ -46,10 +46,6 @@ export class CatalogComponent{
       });
   }
 
-  save(form: NgForm){
-    this.add(form);
-  }
-
   add(form: NgForm){
     this.http.post(`http://localhost:3000/devices/`, form.value)
       .subscribe(res => {
@@ -59,15 +55,15 @@ export class CatalogComponent{
   }
 
   setActive(device: Device){
-    this.active = device
+    this.active = device;
   }
 
   edit(form: NgForm){
     this.http.patch<Device>(`http://localhost:3000/devices/${this.active.id}`, form.value)
       .subscribe(res => {
         this.getAll()
-        form.reset()
-      })
+        form.reset();
+      });
   }
 
 
