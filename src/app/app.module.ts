@@ -8,13 +8,15 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {CatalogListComponent} from './features/catalog/components/catalog-list.component';
 import { CatalogFormComponent } from './features/catalog/components/catalog-form.component';
+import { NavBarComponent } from './features/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CatalogComponent,
     CatalogListComponent,
-    CatalogFormComponent
+    CatalogFormComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

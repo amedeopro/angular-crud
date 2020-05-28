@@ -1,14 +1,6 @@
 {
   "devices": [
     {
-      "label": "IPhone X",
-      "os": "ios",
-      "price": 1200,
-      "rate": 4,
-      "desc": "This device is too expensive!!!!",
-      "id": 1
-    },
-    {
       "label": "One Plus 6t",
       "os": "android",
       "price": 499,
@@ -39,6 +31,16 @@
       "rate": 4,
       "id": 9,
       "desc": ""
+    },
+    {
+      "label": "asd",
+      "price": 123,
+      "id": 10
+    },
+    {
+      "label": "test",
+      "price": 299,
+      "id": 11
     }
   ],
   "login": {
